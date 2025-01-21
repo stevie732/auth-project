@@ -1,7 +1,15 @@
 # Project
 - Authentication Application.
 
-## Dependencies
+## 1. Initialize App.
+- npm init
+  * set author.
+  * set index.js
+  * leave all else empty.
+
+- create index.js file.
+
+## 2. Install Dependencies.
 ##### CLI: npm install the commands below.
 - bcryptjs
 - cookie-parser
@@ -12,3 +20,10 @@
 - jsonwebtoken
 - mongoose
 - nodemailer
+
+## 3. Update `package.json` file.
+- delete test.
+- add `"start": "node --env-file=.env index.js"`.
+- add `"dev": "node --watch --trace-warnings --env-file=.env index.js"`.
+
+## 4. Create `.env` file.
